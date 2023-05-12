@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  width: 100%;
+  height: 14vh;
+  background-color: #8d0801;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  top: -10px;
+}
+
+.left img {
+  width: 90px;
+  height: 70px;
+}
+
+.middle ul {
+  width: 400px;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.middle ul li a {
+  text-decoration: none;
+  color: #eaf4f4;
+  font-size: 1.1rem;
+}
+
+.middle ul li a:hover {
+  border: 2px solid #cce3de;
+  padding: 8px;
+}
+
+.right {
+  display: flex;
+  width: 150px;
+  justify-content: space-between;
+}
+
+.nav-btn {
+  background-color: #eaf4f4;
+  border: none;
+  width: 70px;
+  height: 35px;
+  border-radius: 7px;
+}
+
+.fa-user,
+.fa-right-from-bracket {
+  color: #01868d;
+}
+
+.profile-box {
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 800px;
+  height: 370px;
+  background-color: #8d0801;
+  color: #eaf4f4;
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  display: none;
+}
+
+.profile-box .user-info {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px 0;
+}
+
+.fa-x {
+  padding-left: 500px;
+  padding-top: 10px;
+}
+
+.user-details {
+  display: flex;
+}
+
+.profile-box .user-details .user-details-left img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-left: 15px;
+  margin-top: 50px;
+}
+
+.user-details-right-box {
+  width: 560px;
+  height: 250px;
+  background-color: #01868d;
+  margin-left: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  padding-left: 5%;
+  padding-top: 2%;
+  border-radius: 10px;
+}
+
+.name,
+.age,
+.gender,
+.email,
+.contactNo,
+.country h3 {
+  font-size: 1.1rem;
+}
+
+.name,
+.age,
+.gender,
+.email,
+.contactNo,
+.country p {
+  font-size: 1.1rem;
+}
+
+.logout-box {
+  margin: 0 auto;
+  margin-top: 100px;
+  width: 600px;
+  height: 200px;
+  background-color:#8d0801;
+  color: #eaf4f4;
+  padding-top: 20px;
+  display: none;
+}
+
+.logout-box h2, .logout-text{
+  text-align: center;
+}
+
+.logout-box p {
+  font-size: 1.3rem;
+}
+
+.buttons {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  margin: 5% 10%;
+}
+
+.logout-btn {
+  width: 200px;
+  height: 40px;
+  color: #01868d;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.2rem;
+}
