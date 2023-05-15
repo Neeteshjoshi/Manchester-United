@@ -1,10 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400;500;600&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+}
+
+body {
+  cursor: default;
 }
 
 .navbar {
@@ -183,7 +187,7 @@ hr {
 
 .news-card {
   width: 280px;
-  height: 320px;
+  height: 350px;
   border: 2px solid #eaf4f4;
 }
 
@@ -202,6 +206,7 @@ p {
 }
 
 .news .news-card p {
+  padding: 10px 20px;
   font-size: 0.9rem;
 }
 
@@ -209,6 +214,7 @@ p {
   text-align: center;
   text-decoration: underline;
   color: #8d0801;
+  font-size: 2rem;
 }
 
 .videos-card {
@@ -221,19 +227,21 @@ p {
   padding: 40px 20px;
 }
 
-.videos {
+.videos-1st {
   display: flex;
   justify-content: space-evenly;
-  height: 190vh;
+  margin: 20px 0;
 }
 
 #video1 {
-  background: url("https://icdn.strettynews.com/wp-content/uploads/2021/02/bruno-rash-770x513.jpg");
+  background: linear-gradient(to bottom, transparent, black),
+    url("https://media.gettyimages.com/id/107168196/photo/patrice-evra-of-manchester-united-hurdles-the-challenge-of-el-hadji-diouf-of-blackburn-rovers.jpg?s=612x612&w=0&k=20&c=CIANR81cOvfCBXVyZ7SfUwqls2ZADV5CMYi8HZDXSoE=");
   background-size: 700px;
 }
 
 #video2 {
-  background: url("https://icdn.strettynews.com/wp-content/uploads/2021/02/bruno-rash-770x513.jpg");
+  background: linear-gradient(to bottom, transparent, black),
+    url("https://media.gettyimages.com/id/1462715751/photo/marcus-rashford-of-manchester-united-celebrates-his-goal-to-make-it-2-0-during-the-premier.jpg?s=612x612&w=0&k=20&c=gTWM0FNV_-3Yw7yA4NM3IbjTQQ467QVw2ATRGQWCnRo=");
   background-size: 700px;
 }
 
@@ -252,6 +260,7 @@ p {
   color: #eaf4f4;
   font-size: 2rem;
   line-height: 1;
+  font-family: "Roboto";
 }
 
 #video1:hover {
@@ -260,4 +269,131 @@ p {
 
 #video2:hover {
   background-size: 750px;
+}
+
+.advertisement {
+  margin-top: 10px;
+  display: grid;
+  place-items: center;
+}
+
+.videos-2nd {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.videos-2 .videos-card {
+  width: 280px;
+  height: 400px;
+}
+
+.videos-2 h3 {
+  font-family: "Roboto";
+  font-size: 1.5rem;
+}
+
+#video3 {
+  background: linear-gradient(to bottom, transparent, black),
+    url("https://media.gettyimages.com/id/1237028580/photo/fred-of-manchester-united-celebrates-at-full-time-during-the-premier-league-match-between.jpg?s=612x612&w=0&k=20&c=EdTt3QPP9cKx-vAND8vi03zO8RzePOPwWeWKSbKufd0=");
+}
+
+#video4 {
+  background: linear-gradient(to bottom, transparent, black),
+    url("https://media.gettyimages.com/id/1441219453/photo/alejandro-garnacho-of-manchester-united-celebrates-scoring-their-sides-second-goal-with.jpg?s=612x612&w=0&k=20&c=Mse6JruG2SFFfh0SRQv8r0RyjiLXZESL8KI-P-OzKN4=");
+}
+
+#video5 {
+  background: linear-gradient(to bottom, transparent, black),
+    url("https://media.gettyimages.com/id/490326456/photo/anthony-martial-of-manchester-united-looks-on-during-the-barclays-premier-league-match-between.jpg?s=612x612&w=0&k=20&c=G9Ql8hc2yN_G-D8FyYguuX2_DhsWrAslPtzeWi95Q48=");
+}
+
+#video6 {
+  background: linear-gradient(to bottom, transparent, black),
+    url("https://media.gettyimages.com/id/1408859402/photo/united-players-celebrate-a-goal-during-the-pre-season-friendly-match-between-melbourne.jpg?s=612x612&w=0&k=20&c=JF5HpQyMA3a79ZjiDCo5uZ4z4JNspZ7sH9QzbMPrm3Q=");
+}
+
+#video3:hover {
+  background-size: 550px;
+}
+
+#video4:hover {
+  background-size: 550px;
+}
+
+#video5:hover {
+  background-size: 550px;
+}
+
+#video6:hover {
+  background-size: 550px;
+}
+
+.academy-banner {
+  background: linear-gradient(to bottom, transparent, black),
+    url("https://media.gettyimages.com/id/928626076/photo/manchester-united-youth-team-coach-eric-harrison-is-awarded-a-bottle-of-champagne-and-and.jpg?s=612x612&w=0&k=20&c=SkFQpRq92KOcwv6FpDhKv9sX0e9gHXM5uuVekQMIHOU=");
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  margin-top: 10px;
+}
+
+.academy-info {
+  padding-left: 20px;
+}
+
+.academy-info h3 {
+  color: #eaf4f4;
+  font-size: 4rem;
+}
+
+.academy-info button {
+  background-color: black;
+  border: 2px solid #eaf4f4;
+  text-transform: uppercase;
+  color: #eaf4f4;
+  width: 300px;
+  height: 50px;
+  font-weight: 700;
+  border-radius: 30px;
+}
+
+.shop {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.shop-card {
+  width: 320px;
+  height: 350px;
+  background-color: white;
+  border: 2px solid rgb(197, 197, 197);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+
+.shop-card img {
+  width: 200px;
+  height: 200px;
+}
+
+.shop-card p {
+  font-style: italic;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.shop-card button {
+  width: 140px;
+  border-radius: 20px;
+  border: 1px solid black;
+  font-weight: 700;
+  background-color: white;
+  text-transform: uppercase;
+  height: 40px;
 }
