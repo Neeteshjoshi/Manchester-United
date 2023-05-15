@@ -66,14 +66,14 @@ body {
 
 .profile-box {
   margin: 0 auto;
-  margin-top: 30px;
   width: 800px;
   height: 370px;
   background-color: #8d0801;
   color: #eaf4f4;
-  position: absolute;
-  left: 20%;
-  top: 20%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: none;
 }
 
@@ -122,23 +122,27 @@ body {
   font-size: 1.1rem;
 }
 
-.name,
-.age,
-.gender,
-.email,
-.contactNo,
-.country p {
+#name,
+#age,
+#country,
+#gender,
+#email,
+#contactNo {
   font-size: 1.1rem;
+  padding: 0;
 }
 
 .logout-box {
   margin: 0 auto;
-  margin-top: 100px;
   width: 600px;
   height: 200px;
   background-color: #8d0801;
   color: #eaf4f4;
+  position: fixed;
   padding-top: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: none;
 }
 
@@ -357,6 +361,7 @@ p {
   height: 50px;
   font-weight: 700;
   border-radius: 30px;
+  margin-bottom: 10px;
 }
 
 .shop {
@@ -396,4 +401,102 @@ p {
   background-color: white;
   text-transform: uppercase;
   height: 40px;
+}
+
+.podcast-banner {
+  background: linear-gradient(to bottom, transparent, black),
+    url("https://media.gettyimages.com/id/1211163224/photo/manchester-united-fans-watch-a-live-podcast-recording-ahead-of-the-premier-league-match.jpg?s=612x612&w=0&k=20&c=y8cSMKsObp1YlResFKIMHwEg2qSTa7Z-pEJZJOK2O5o=");
+  height: 80vh;
+  background-size: cover;
+}
+
+.podcast-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.podcast-banner button {
+  width: 60px;
+  height: 60px;
+  background-color: red;
+  border: none;
+  color: #cce3de;
+  margin-left: 20px;
+}
+
+.podcast-banner p {
+  color: #eaf4f4;
+  margin: 10px 0;
+  font-size: 3rem;
+  font-family: "Roboto";
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.match {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+
+.match-card {
+  width: 300px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 1px solid rgb(197, 197, 197);
+  border-radius: 10px;
+}
+
+.logo img {
+  width: 200px;
+}
+
+.schedule p {
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.score {
+  display: flex;
+}
+
+.score img {
+  width: 70px;
+}
+
+.score button {
+  width: 90px;
+  height: 70px;
+  font-size: 2rem;
+  background-color: rgb(104, 96, 96);
+  border-radius: 10px;
+  color: #eaf4f4;
+  border: none;
+  margin: 0 8px;
+  font-family: "Roboto";
+}
+
+.match-card h5 {
+  text-align: center;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.match-btn button {
+  height: 40px;
+  width: 180px;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 20px;
+}
+
+#grey {
+  background-color: black;
 }
