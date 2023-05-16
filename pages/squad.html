@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - Manchester United</title>
+    <link rel="stylesheet" href="../styles/about.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container" id="mainContainer">
+      <div class="navbar">
+        <div class="left">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/en/thumb/7/7a/Manchester_United_FC_crest.svg/1200px-Manchester_United_FC_crest.svg.png"
+            alt=""
+          />
+        </div>
+        <div class="middle">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./pages/about.html">About</a></li>
+            <li><a href="#">Squad</a></li>
+            <li><a href="#">Trophies</a></li>
+          </ul>
+        </div>
+        <div class="right">
+          <button class="nav-btn" id="profileBtn2" onclick="profileClick()">
+            <i class="fa-solid fa-user fa-lg"></i>
+          </button>
+          <button class="nav-btn" id="logoutBtn2" onclick="logoutClick()">
+            <i class="fa-solid fa-right-from-bracket fa-lg"></i>
+          </button>
+        </div>
+      </div>
+      <section id="mainSection">
+        <div class="profile-box" id="profileContainer">
+          <div class="user-info">
+            <h2>User Information</h2>
+            <i
+              class="fa-solid fa-x"
+              id="profileCancel"
+              onclick="profileCancelFun()"
+            ></i>
+          </div>
+          <div class="user-details">
+            <div class="user-details-left">
+              <img
+                src="https://img.freepik.com/free-photo/senior-man-face-portrait-wearing-bowler-hat_53876-148154.jpg"
+                alt=""
+              />
+            </div>
+            <div class="user-details-right">
+              <div class="user-details-right-box">
+                <div class="name">
+                  <h3>Name</h3>
+                  <p id="name">Parashar Baral</p>
+                </div>
+                <div class="age">
+                  <h3>Age</h3>
+                  <p id="age">25</p>
+                </div>
+                <div class="gender">
+                  <h3>Gender</h3>
+                  <p id="gender">Male</p>
+                </div>
+                <div class="email">
+                  <h3>Email</h3>
+                  <p id="email">parashar@yahoo.com</p>
+                </div>
+                <div class="contactNo">
+                  <h3>Contact No</h3>
+                  <p id="contactNo">98xxxxxxxxxxxx</p>
+                </div>
+                <div class="country">
+                  <h3>Country</h3>
+                  <p id="country">Nepal</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="logout-box" id="logoutBox">
+          <h2>Logout</h2>
+          <p class="logout-text">Are you sure you want to logout?</p>
+          <div class="buttons">
+            <button class="logout-btn">Sure</button>
+            <button
+              class="logout-btn"
+              id="logoutCancel"
+              onclick="logoutCancelFun()"
+            >
+              Cancel
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="../script.js"></script>
+  </body>
+</html>
